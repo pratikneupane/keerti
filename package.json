@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Sano Gift",
   "scripts": {
-    "build": "copyfiles -u 1 -e src/index.coffee src/**/* dist && coffee -c -o dist/ src/index.coffee",
-    "dev": "copyfiles -u 1 -e src/index.coffee src/**/* dist && coffee -w -c -o dist/ src/index.coffee",
-    "clean": "rimraf dist/*"
+    "build": "copyfiles -u 1 -e src/index.coffee src/**/* ./ && coffee -c -o ./ src/index.coffee",
+    "dev": "copyfiles -u 1 -e src/index.coffee src/**/* ./ && coffee -w -c -o ./ src/index.coffee"
   },
   "repository": {
     "type": "git"
@@ -13,7 +12,6 @@
   "author": "pratikneupane",
   "dependencies": {
     "coffee-script": "^1.12.7",
-    "copyfiles": "^2.1.0",
-    "rimraf": "^2.6.3"
+    "copyfiles": "^2.1.0"
   }
 }
